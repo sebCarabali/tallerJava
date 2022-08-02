@@ -15,7 +15,10 @@ import java.io.Serializable;
       query = "SELECT l FROM Link l WHERE l.url = :" + Link.P_URL),
   @NamedQuery(
       name = Link.Q_FIND_BY_TINY_URL,
-      query = "SELECT l FROM Link l WHERE l.tinyUrl LIKE :" + Link.P_TINY_URL)
+      query = "SELECT l FROM Link l WHERE l.tinyUrl LIKE :" + Link.P_TINY_URL),
+  @NamedQuery(
+      name = Link.Q_FIND_BY_USERNAME,
+      query = "select ul.link from UserLink ul where ul.user.username = :" + Link.P_USERNAME)
 })
 @Entity
 @Getter
@@ -29,8 +32,10 @@ public class Link implements Serializable {
   public static final String Q_FIND_ALL = "Link.findAll";
   public static final String Q_FIND_BY_URL = "Link.findByUrl";
   public static final String Q_FIND_BY_TINY_URL = "Link.findByTinyUrl";
+  public static final String Q_FIND_BY_USERNAME = "Link.findByUsername";
   public static final String P_URL = "url";
   public static final String P_TINY_URL = "tinyUrl";
+  public static final String P_USERNAME = "username";
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)

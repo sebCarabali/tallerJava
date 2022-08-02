@@ -1,6 +1,5 @@
 package com.example.sebastian.controller;
 
-import com.example.sebastian.model.Link;
 import com.example.sebastian.service.LinkService;
 import jakarta.inject.Inject;
 import jakarta.servlet.ServletException;
@@ -10,19 +9,24 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
-import java.util.List;
 
-@WebServlet(name = "UserLinkController", urlPatterns = "/userlinks")
-public class UserLinkController extends HttpServlet {
+@WebServlet(
+    name = "EliminarLinkController",
+    urlPatterns = {"/links/eliminar/*"})
+public class EliminarLinkController extends HttpServlet {
   @Inject private LinkService linkService;
 
   @Override
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
-    final List<Link> links = linkService.findByUsername("sebcarabali");
-    links.stream().map(Link::getUrl).forEach(System.out::println);
-    request.setAttribute("links", links);
-    request.getRequestDispatcher("links/list.jsp").forward(request, response);
+    try {
+      final Long idLink = Long.valueOf(request.getPathInfo().substring(1));
+      final String username = "sebcarabali";
+      linkService.deleteUserLink(username, idLink);
+      request.getRequestDispatcher("links/list.jsp").forward(request, response);
+    } catch (NumberFormatException nfe) {
+      request.getRequestDispatcher("links/list.jsp").forward(request, response);
+    }
   }
 
   @Override

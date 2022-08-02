@@ -2,7 +2,6 @@ package com.example.sebastian.controller;
 
 import com.example.sebastian.service.LinkService;
 import jakarta.inject.Inject;
-import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -19,7 +18,8 @@ public class LinkController extends HttpServlet {
   @Override
   protected void doGet(final HttpServletRequest req, final HttpServletResponse resp)
       throws ServletException, IOException {
-    final ServletContext ctx = this.getServletContext();
+    // http://localhost:8080/tallerfinal-1.0-SNAPSHOT
+    // 3LF
     final String query = req.getPathInfo();
     final String original = linkService.findOriginal(query.substring(3));
     resp.setHeader("Location", original);

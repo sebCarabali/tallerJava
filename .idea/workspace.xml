@@ -9,56 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ec7572b-03ac-4a67-8c34-f843cf18f418" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/tallerfinal_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/tallerfinal_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/controller/LinkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/controller/RecortarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/controller/UserLinkController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/exceptions/UserNotFound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/filter/AuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/model/Link.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/model/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/model/UserLink.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/LinkDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/TicketDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/UserLinksDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/impl/LinkDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/impl/TicketDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/impl/UserLinkDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/impl/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/service/LinkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/service/impl/LinkServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/links.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/links/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/loginError.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/sebastian/service/LinkServiceTest.java" afterDir="false" />
+    <list default="true" id="2ec7572b-03ac-4a67-8c34-f843cf18f418" name="Changes" comment="Se crear el proyecto en github">
+      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/controller/EliminarLinkController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/util/AuthUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/tallerfinal_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/tallerfinal_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sebastian/controller/LinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/controller/LinkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sebastian/controller/UserLinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/controller/UserLinkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sebastian/filter/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/filter/AuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sebastian/model/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/model/Link.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/LinkDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/LinkDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/UserLinksDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/UserLinksDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/impl/LinkDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/impl/LinkDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/impl/UserLinkDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/repository/impl/UserLinkDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sebastian/service/LinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/service/LinkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/sebastian/service/impl/LinkServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/sebastian/service/impl/LinkServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/links/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/links/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +42,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="com.haulmont.jpb.JpaEntity" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -270,11 +241,26 @@
       <workItem from="1659319590265" duration="6631000" />
       <workItem from="1659331028941" duration="8566000" />
       <workItem from="1659345591694" duration="1566000" />
+      <workItem from="1659359181192" duration="481000" />
+      <workItem from="1659363905787" duration="1089000" />
+      <workItem from="1659398262770" duration="12567000" />
     </task>
+    <task id="LOCAL-00001" summary="Se crear el proyecto en github">
+      <created>1659359279674</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1659359279674</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -286,6 +272,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se crear el proyecto en github" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se crear el proyecto en github" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

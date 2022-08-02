@@ -5,6 +5,7 @@ import com.example.sebastian.repository.UserLinksDAO;
 import jakarta.ejb.Stateless;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.TypedQuery;
 
 @Stateless
 public class UserLinkDAOImpl implements UserLinksDAO {
@@ -16,5 +17,18 @@ public class UserLinkDAOImpl implements UserLinksDAO {
     em.persist(userLink);
     em.flush();
     return userLink;
+  }
+
+  @Override
+  public void deleteUserlink(String username, Long idLink) {
+    final TypedQuery<UserLink> tq =
+        em.createQuery(
+            "select ul from UserLink ul where ul.link.id = :idLink and ul.user.username = :username",
+            UserLink.class);
+    tq.setParameter("username", username);
+    tq.setParameter("idLink", idLink);
+    UserLink ul = tq.getSingleResult();
+    em.remove(ul);
+    em.flush();
   }
 }

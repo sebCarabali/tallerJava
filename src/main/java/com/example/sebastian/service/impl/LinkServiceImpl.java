@@ -17,6 +17,7 @@ import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
 
 import java.net.UnknownHostException;
+import java.util.List;
 
 @Stateless
 public class LinkServiceImpl implements LinkService {
@@ -79,5 +80,15 @@ public class LinkServiceImpl implements LinkService {
   private Long generateUniqueId() {
     final Ticket ticket = ticketDAO.guardar();
     return ticket.getId();
+  }
+
+  @Override
+  public List<Link> findByUsername(final String username) {
+    return linkDAO.findByUsername(username);
+  }
+
+  @Override
+  public void deleteUserLink(String username, Long idLink) {
+    userLinksDAO.deleteUserlink(username, idLink);
   }
 }

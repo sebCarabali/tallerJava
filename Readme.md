@@ -1,0 +1,4 @@
+- [] Registro de usuarios
+- [] Obtener el usuario de la sesión
+- [] Actualizar perfil usuario
+- [] Verificar navegación

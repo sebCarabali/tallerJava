@@ -8,6 +8,8 @@ import jakarta.persistence.NoResultException;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
 
+import java.util.List;
+
 @Stateless
 public class LinkDAOImpl implements LinkDAO {
 
@@ -42,5 +44,12 @@ public class LinkDAOImpl implements LinkDAO {
     } catch (NoResultException e) {
       return null;
     }
+  }
+
+  @Override
+  public List<Link> findByUsername(final String username) {
+    final TypedQuery<Link> tq = em.createNamedQuery(Link.Q_FIND_BY_USERNAME, Link.class);
+    tq.setParameter(Link.P_USERNAME, username);
+    return tq.getResultList();
   }
 }
